@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lemon&family=Rubik+Maps&family=Sevillana&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <style>
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            margin: auto;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        .love {
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Lemon', serif;
+        }
+        .from{
+            color: blue;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Lemon', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="love">I Love You</h3>
+    <div id="heart" class="animate__animated animate__pulse animate__infinite	infinite"></div>
+    <h3 class="from">Your Mohnish</h3>
+</body>
+
+</html>
